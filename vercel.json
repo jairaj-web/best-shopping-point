@@ -1,0 +1,23 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/collection", "destination": "/collection.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/visit", "destination": "/contact.html" }
+  ],
+  "redirects": [
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/collection.html", "destination": "/collection", "permanent": true },
+    { "source": "/gallery.html", "destination": "/gallery", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

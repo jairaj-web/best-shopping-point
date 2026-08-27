@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /*.html$
+Sitemap: https://bestshoppingpoint.com/sitemap.xml
+
+# Clean URL note: .html is redirected to clean via .htaccess / _redirects
+# Assets
+Allow: /assets/

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | Best Shopping Point</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="404 — Best Shopping Point">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" href="assets/og.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','serif'],sans:['Inter','sans-serif']},colors:{ink:'#0B0F1A',gold:'#C5A880',gold2:'#B8936A',cream:'#F8F7F4'}}}}</script>
+<style>html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}img{max-width:100%;height:auto}</style>
+</head>
+<body class="bg-cream text-ink antialiased overflow-x-hidden flex flex-col min-h-screen">
+<div class="bg-ink text-white text-[11px] sm:text-[12px] tracking-wide"><div class="max-w-[1280px] mx-auto px-4 lg:px-6 py-2.5 flex justify-between items-center"><span class="opacity-80">299, near Kristu Jayanti, Kothanur — 560077</span><a href="tel:+917676710066" class="text-gold font-semibold">076767 10066</a></div></div>
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-black/5"><div class="max-w-[1280px] mx-auto px-4 lg:px-6 h-[64px] flex items-center justify-between"><a href="/" class="flex items-center gap-3"><div class="w-10 h-10 bg-ink text-gold flex items-center justify-center font-serif font-bold">BSP</div><div class="leading-none"><div class="font-serif font-bold">Best Shopping Point</div><div class="text-[11px] tracking-widest uppercase opacity-60">Kothanur • Bengaluru</div></div></a><a href="/" class="hidden sm:inline-flex h-10 px-6 bg-ink text-white text-sm font-bold rounded-full hover:bg-black transition">GO HOME</a></div></header>
+
+<main class="flex-1 flex items-center justify-center px-4 py-12 lg:py-20">
+<div class="max-w-[560px] w-full text-center">
+<div class="inline-flex items-center gap-2 bg-white border border-black/5 rounded-full px-4 py-1 text-xs font-bold tracking-widest"><span class="w-2 h-2 bg-red-500 rounded-full"></span> 404 — PAGE NOT FOUND</div>
+<h1 class="font-serif text-[42px] sm:text-[56px] font-bold leading-none mt-6">Oops.<br><span class="italic text-gold2 font-medium">Not found</span></h1>
+<p class="text-sm sm:text-[15px] opacity-60 leading-relaxed mt-4">The page you’re looking for doesn’t exist. Maybe you typed <b class="opacity-80">/about.html</b> — try clean URL <b class="opacity-80">/about</b> instead.</p>
+<div class="grid grid-cols-2 sm:flex sm:justify-center gap-3 mt-8">
+<a href="/" class="h-11 px-6 bg-ink text-white font-bold text-sm rounded-full inline-flex items-center justify-center hover:bg-black transition">HOME</a>
+<a href="about" class="h-11 px-6 bg-white border border-black/10 font-bold text-sm rounded-full inline-flex items-center justify-center hover:bg-cream transition">ABOUT</a>
+<a href="collection" class="h-11 px-6 bg-white border border-black/10 font-bold text-sm rounded-full inline-flex items-center justify-center hover:bg-cream transition">COLLECTION</a>
+<a href="gallery" class="h-11 px-6 bg-gold text-ink font-bold text-sm rounded-full inline-flex items-center justify-center hover:bg-gold2 transition">GALLERY (57)</a>
+</div>
+<div class="mt-8 bg-white border border-black/5 rounded-2xl p-5 text-left">
+<div class="text-[11px] tracking-widest font-bold opacity-40 uppercase">Try clean URLs</div>
+<div class="grid grid-cols-2 gap-2 mt-3 text-sm font-medium">
+<a href="about" class="py-2 px-3 bg-cream rounded hover:bg-ink hover:text-white transition">/about →</a>
+<a href="collection" class="py-2 px-3 bg-cream rounded hover:bg-ink hover:text-white transition">/collection →</a>
+<a href="gallery" class="py-2 px-3 bg-cream rounded hover:bg-ink hover:text-white transition">/gallery →</a>
+<a href="contact" class="py-2 px-3 bg-cream rounded hover:bg-ink hover:text-white transition">/contact →</a>
+</div>
+<p class="text-xs opacity-50 mt-3">Old .html links auto-redirect to clean URLs via .htaccess / _redirects.</p>
+</div>
+<div class="flex flex-wrap gap-3 justify-center mt-6">
+<a href="tel:+917676710066" class="inline-flex h-10 px-5 bg-[#25D366] text-white font-bold text-xs rounded-full items-center hover:scale-105 transition">WHATSAPP</a>
+<a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="inline-flex h-10 px-5 border border-black/10 font-bold text-xs rounded-full items-center hover:bg-cream transition">DIRECTIONS</a>
+</div>
+</div>
+</main>
+
+<footer class="bg-[#070A14] text-white/60 text-xs text-center py-6">© 2026 Best Shopping Point • <a href="/" class="text-white hover:text-gold">Home</a> • <a href="contact" class="text-white hover:text-gold">Visit</a></footer>
+
+<script>
+// Clean URL fallback: if landed with .html, redirect to clean (for static hosts without .htaccess)
+(function(){
+  const p=location.pathname;
+  if(p.endsWith('.html')){
+    const clean=p.replace(/\.html$/,'').replace(/\/index$/,'/');
+    if(clean!==p) location.replace(clean+location.search+location.hash);
+  }
+  // Also handle /index case
+  if(p.endsWith('/index')){
+    location.replace(p.replace(/\/index$/,'/')+location.search+location.hash);
+  }
+})();
+</script>
+</body>
+</html>
