@@ -472,7 +472,7 @@ window.addEventListener('scroll',()=>{
   if(prog) prog.style.width=pct+'%';
   if(hdr){
     if(sc>80){ hdr.classList.add('shadow-md'); } else { hdr.classList.remove('shadow-md'); }
-    if(sc>lastY && sc>200) { hdr.style.transform='translateY(-100%)'; } else { hdr.style.transform='translateY(0)'; }
+    const _mn=document.getElementById('mobileNav');const _isMobile=window.innerWidth<1024;if(!_isMobile&&sc>lastY && sc>200&&(!_mn||_mn.classList.contains('hidden'))) { hdr.style.transform='translateY(-100%)'; } else { hdr.style.transform='translateY(0)'; }
   }
   lastY=sc;
 },{passive:true});
