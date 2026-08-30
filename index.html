@@ -118,85 +118,75 @@ html{scroll-behavior:smooth}
 
 <!-- HERO -->
 <section class="bg-cream text-ink relative overflow-hidden border-b border-black/5">
-  <div class="absolute top-0 left-0 w-full h-1 brand-gradient"></div>
-  <!-- blobs -->
-  <div class="absolute -top-6 -right-6 sm:-top-20 sm:-right-20 lg:-top-32 lg:-right-32 w-[160px] h-[160px] sm:w-[280px] sm:h-[280px] lg:w-[520px] lg:h-[520px] bg-brandYellow/15 rounded-full blob"></div>
-  <div class="absolute top-10 -left-6 sm:top-16 sm:-left-10 lg:top-40 lg:-left-32 w-[140px] h-[140px] sm:w-[220px] sm:h-[220px] lg:w-[420px] lg:h-[420px] bg-brandPink/10 rounded-full blob"></div>
-  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-[200px] sm:h-[300px] bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  <div class="absolute top-0 left-0 w-full h-1 bg-brandBlue"></div>
+  <!-- blobs - hidden on mobile for clean -->
+  <div class="hidden lg:block absolute -top-32 -right-32 w-[520px] h-[520px] bg-brandYellow/15 rounded-full blob"></div>
+  <div class="hidden lg:block absolute top-40 -left-32 w-[420px] h-[420px] bg-brandPink/10 rounded-full blob"></div>
+  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-[180px] sm:h-[300px] bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
 
-  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 grid lg:grid-cols-[1.08fr_0.92fr] gap-3 sm:gap-6 lg:gap-8 items-center py-3 sm:py-6 lg:py-14 relative">
+  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 flex flex-col-reverse lg:grid lg:grid-cols-[1.08fr_0.92fr] gap-5 sm:gap-6 lg:gap-10 items-center py-5 sm:py-8 lg:py-14 relative">
     <!-- left -->
-    <div class="relative z-10">
+    <div class="relative z-10 w-full">
       <div data-aos="fade-down" data-aos-duration="700" class="inline-flex items-center gap-1.5 sm:gap-2 bg-white border border-black/10 rounded-full pl-1 pr-2.5 sm:pr-3 py-1 text-[11px] sm:text-xs shadow-sm">
-        <span class="bg-white text-ink font-bold px-2 sm:px-2.5 py-1 rounded-full text-[10px] sm:text-[11px]">★ 4.9</span>
+        <span class="bg-ink text-white font-bold px-2 sm:px-2.5 py-1 rounded-full text-[10px] sm:text-[11px]">★ 4.9</span>
         <span class="opacity-80">18 Google reviews</span>
-        <span class="hidden sm:inline w-px h-3 bg-white/20"></span>
-        <span class="hidden sm:inline text-brandYellow font-bold tracking-widest text-[10px]">TRUSTED IN KOTHANUR</span>
+        <span class="hidden sm:inline w-px h-3 bg-black/10"></span>
+        <span class="hidden sm:inline text-brandBlue font-bold tracking-widest text-[10px]">TRUSTED IN KOTHANUR</span>
       </div>
 
-      <h1 class="font-serif font-bold leading-[0.88] tracking-tight text-[26px] sm:text-[36px] lg:text-[66px] mt-2.5 sm:mt-5 text-balance break-words">
-        <span class="block overflow-hidden"><span data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" class="block">Shopping,</span></span>
-        <span class="block overflow-hidden"><span data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="block text-brandBlue italic font-semibold">Made Premium</span></span>
-        <span class="block overflow-hidden"><span data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" class="block">in Kothanur</span></span>
+      <h1 class="font-serif font-bold leading-[0.9] tracking-tight text-[28px] sm:text-[40px] lg:text-[66px] mt-3 sm:mt-5 text-balance">
+        <span class="block">Shopping,</span>
+        <span class="block text-brandBlue italic font-semibold">Made Premium</span>
+        <span class="block">in Kothanur</span>
       </h1>
 
-      <p data-aos="fade-up" data-aos-delay="400" class="text-ink/60 text-[13px] sm:text-[15px] lg:text-[17px] leading-5 sm:leading-relaxed mt-2 sm:mt-4 max-w-full sm:max-w-[560px] break-words">
+      <p data-aos="fade-up" data-aos-delay="100" class="text-ink/60 text-[14px] sm:text-[16px] lg:text-[17px] leading-5 sm:leading-6 mt-3 sm:mt-4 max-w-full sm:max-w-[560px]">
         57+ premium styles &mdash; <span class="text-ink font-medium">handbags, Lumina & KISH slings, apparel & Samba footwear</span> &mdash; curated near <b class="text-ink">Kristu Jayanti College</b>. Touch, try, take home today. Open till <b class="text-brandBlue">11 PM</b>.
       </p>
 
-      <div data-aos="fade-up" data-aos-delay="500" class="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3 mt-3 sm:mt-6">
-        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="group min-h-[44px] h-[44px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center bg-brandBlue text-white font-bold text-sm tracking-wide hover:opacity-90 transition shine w-full sm:w-auto">GET DIRECTIONS <span class="ml-1 group-hover:translate-x-0.5 transition">→</span></a>
-        <a href="tel:+917676710066" class="min-h-[44px] h-[44px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center border border-ink/15 text-ink font-semibold text-sm hover:bg-white hover:text-ink transition gap-2 w-full sm:w-auto justify-center"> <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> 076767 10066</a>
+      <div data-aos="fade-up" data-aos-delay="150" class="flex flex-col sm:flex-row gap-2.5 sm:gap-3 mt-4 sm:mt-6">
+        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="h-[46px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center bg-brandBlue text-white font-bold text-sm tracking-wide hover:opacity-90 transition w-full sm:w-auto">GET DIRECTIONS →</a>
+        <a href="tel:+917676710066" class="h-[46px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center border border-ink/15 text-ink font-semibold text-sm hover:bg-ink hover:text-white transition gap-2 w-full sm:w-auto justify-center"><span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> 076767 10066</a>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="600" class="grid grid-cols-2 gap-2 sm:gap-3 sm:flex sm:flex-wrap sm:gap-6 mt-3 sm:mt-6 pt-3 sm:pt-5 border-t border-black/5 text-sm">
-        <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-full bg-white border border-black/5 flex items-center justify-center shrink-0">◍</span><span class="leading-tight"><b class="block text-ink text-sm">Near Kristu Jayanti</b><span class="text-ink/60 text-[12px]">2 min walk • Kothanur</span></span></div>
-        <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-full bg-white border border-black/5 flex items-center justify-center shrink-0">◎</span><span class="leading-tight"><b class="block text-ink text-sm">Open till 11 PM</b><span class="text-ink/60 text-[12px]">Thu - Sun late</span></span></div>
+      <div class="grid grid-cols-2 gap-2 sm:gap-3 mt-4 sm:mt-6 pt-3 sm:pt-5 border-t border-black/5 text-sm">
+        <div class="flex items-center gap-2"><span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white border border-black/5 flex items-center justify-center shrink-0 text-xs sm:text-sm">◍</span><span class="leading-tight"><b class="block text-ink text-[13px] sm:text-sm">Near Kristu Jayanti</b><span class="text-ink/60 text-[11px] sm:text-[12px]">2 min walk</span></span></div>
+        <div class="flex items-center gap-2"><span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white border border-black/5 flex items-center justify-center shrink-0 text-xs sm:text-sm">◎</span><span class="leading-tight"><b class="block text-ink text-[13px] sm:text-sm">Open till 11 PM</b><span class="text-ink/60 text-[11px] sm:text-[12px]">Thu-Sun late</span></span></div>
       </div>
 
-      <!-- marquee mobile -->
-      <div data-aos="fade-up" data-aos-delay="700" class="mt-6 -mx-4 lg:mx-0 bg-cream border-y border-black/5 py-2 overflow-hidden sm:hidden">
-        <div class="flex animate-marquee whitespace-nowrap text-[11px] tracking-[0.18em] font-bold gap-4 sm:gap-6 lg:gap-8">
+      <!-- marquee mobile - hide on mobile for cleaner, show only sm -->
+      <div class="hidden sm:block mt-6 bg-cream border-y border-black/5 py-2 overflow-hidden -mx-4 lg:mx-0">
+        <div class="flex animate-marquee whitespace-nowrap text-[11px] tracking-[0.18em] font-bold gap-6">
           <span>GG BAGS •</span><span>LUMINA SLINGS •</span><span>KISH OFFICE •</span><span>SAMBA SHOES •</span><span>APPAREL •</span>
           <span>GG BAGS •</span><span>LUMINA SLINGS •</span><span>KISH OFFICE •</span><span>SAMBA SHOES •</span><span>APPAREL •</span>
         </div>
       </div>
     </div>
 
-    <!-- right visual -->
-    <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="200" class="relative">
-      <div class="relative w-full aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/3.9] overflow-hidden bg-[#1A1F2E] rounded-[12px] sm:rounded-[18px] shadow-[0_8px_20px_rgba(0,0,0,.15)] sm:shadow-[0_30px_80px_rgba(0,0,0,.45)]">
-        <img src="assets/hero.jpg" alt="Best Shopping Point Premium Handbags" class="w-full h-full object-cover object-center opacity-[0.98] scale-[1.02] hover:scale-[1.04] transition duration-[1.2s] max-w-full">
-        <div class="absolute inset-0 bg-gradient-to-t from-ink/55 via-transparent to-transparent"></div>
-        <div class="absolute inset-0 ring-1 ring-white/10 rounded-[18px] pointer-events-none"></div>
-        <!-- floating top -->
-        <div class="absolute top-2.5 sm:top-4 right-2.5 sm:right-4 bg-white text-ink px-2.5 sm:px-4 py-2 sm:py-3 shadow-md sm:shadow-xl flex items-center gap-2 sm:gap-3 rounded-lg sm:rounded-xl animate-float max-w-[132px] sm:max-w-[210px]">
+    <!-- right visual - on mobile appears on top due to flex-col-reverse -->
+    <div data-aos="fade-left" data-aos-duration="900" class="relative w-full">
+      <div class="relative w-full aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/3.9] overflow-hidden bg-[#1A1F2E] rounded-[16px] sm:rounded-[18px] shadow-[0_12px_30px_rgba(0,0,0,.2)] sm:shadow-[0_30px_80px_rgba(0,0,0,.45)]">
+        <img src="assets/hero.jpg" alt="Best Shopping Point Premium Handbags" class="w-full h-full object-cover object-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent"></div>
+        <!-- floating cards - hidden on mobile for clean -->
+        <div class="hidden sm:flex absolute top-3 sm:top-4 right-3 sm:right-4 bg-white text-ink px-3 sm:px-4 py-2 sm:py-3 shadow-lg sm:shadow-xl gap-2 sm:gap-3 rounded-lg sm:rounded-xl items-center">
           <div class="w-8 h-8 sm:w-10 sm:h-10 bg-cream rounded-full flex items-center justify-center text-sm sm:text-lg shrink-0">🛍️</div>
-          <div class="text-xs leading-tight"><b class="block text-sm">33 Mins</b><span class="opacity-60 text-[11px]">From City Centre</span></div>
+          <div class="text-xs leading-tight"><b class="block text-sm">33 Mins</b><span class="opacity-60 text-[11px]">From Centre</span></div>
         </div>
-        <!-- floating bottom - FIXED: added text-ink for visibility on white bg -->
-        <div class="absolute bottom-2.5 sm:bottom-4 left-2.5 right-2.5 sm:left-4 sm:right-4 bg-white text-ink p-2 sm:p-4 flex items-center justify-between rounded-lg sm:rounded-xl shadow-[0_6px_16px_rgba(0,0,0,.18)] sm:shadow-[0_12px_30px_rgba(0,0,0,.25)] z-10 border border-black/5">
-          <div class="min-w-0 flex-1">
-            <div class="text-[10px] tracking-[0.18em] font-bold text-ink/60">VISIT US AT</div>
-            <div class="font-bold text-[13px] sm:text-[14px] leading-tight mt-0.5 text-ink">299, K.Narayanapura, Kothanur</div>
-            <div class="text-[10px] sm:text-xs font-medium text-ink/70">Bengaluru - 560077 • 57 styles</div>
-          </div>
-          <div class="hidden sm:flex w-10 h-10 bg-ink text-white items-center justify-center rounded-full shrink-0 ml-3">↗</div>
+        <div class="hidden sm:flex absolute bottom-3 sm:bottom-4 left-3 right-3 sm:left-4 sm:right-4 bg-white text-ink p-2.5 sm:p-4 items-center justify-between rounded-lg sm:rounded-xl shadow-md border border-black/5">
+          <div class="min-w-0"><div class="text-[10px] tracking-[0.18em] font-bold text-ink/60">VISIT US AT</div><div class="font-bold text-[13px] sm:text-[14px] leading-tight">299, K.Narayanapura, Kothanur</div><div class="text-[11px] sm:text-xs font-medium text-ink/70">Bengaluru • 57 styles</div></div>
+          <div class="w-9 h-9 sm:w-10 sm:h-10 bg-ink text-white rounded-full flex items-center justify-center shrink-0 ml-3 text-sm">↗</div>
         </div>
       </div>
-      <div class="absolute -bottom-3 -right-3 w-full h-full border border-brandYellow/20 rounded-[18px] -z-10 hidden lg:block"></div>
-      <!-- small floating dots -->
-      <div class="absolute -left-3 top-10 w-3 h-3 bg-gold rounded-full opacity-60 hidden lg:block animate-float"></div>
-      <div class="absolute -right-2 bottom-20 w-2 h-2 bg-white rounded-full opacity-40 hidden lg:block animate-float2"></div>
     </div>
   </div>
 
   <!-- stats -->
-  <div class="border-t border-black/5 bg-white backdrop-blur">
+  <div class="border-t border-black/5 bg-white">
     <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 grid grid-cols-3 divide-x divide-black/10">
-      <div class="py-3 sm:py-5 text-center group" data-aos="zoom-in" data-aos-delay="100"><div class="font-serif text-lg sm:text-2xl font-bold flex items-center justify-center gap-1"><span class="counter" data-target="4.9">0</span>★</div><div class="text-[9px] sm:text-[11px] tracking-widest opacity-60 uppercase">Google Rating</div></div>
-      <div class="py-4 sm:py-5 text-center" data-aos="zoom-in" data-aos-delay="200"><div class="font-serif text-xl sm:text-2xl font-bold"><span class="counter" data-target="57">0</span>+</div><div class="text-[10px] sm:text-[11px] tracking-widest opacity-60 uppercase">Premium Styles</div></div>
-      <div class="py-4 sm:py-5 text-center" data-aos="zoom-in" data-aos-delay="300"><div class="font-serif text-xl sm:text-2xl font-bold">Till 11PM</div><div class="text-[10px] sm:text-[11px] tracking-widest opacity-60 uppercase">Open Late</div></div>
+      <div class="py-3 sm:py-4 text-center"><div class="font-serif text-lg sm:text-2xl font-bold">4.9★</div><div class="text-[9px] sm:text-[11px] tracking-widest opacity-60 uppercase">Rating</div></div>
+      <div class="py-3 sm:py-4 text-center"><div class="font-serif text-lg sm:text-2xl font-bold">57+</div><div class="text-[9px] sm:text-[11px] tracking-widest opacity-60 uppercase">Styles</div></div>
+      <div class="py-3 sm:py-4 text-center"><div class="font-serif text-lg sm:text-2xl font-bold">Till 11PM</div><div class="text-[9px] sm:text-[11px] tracking-widest opacity-60 uppercase">Late</div></div>
     </div>
   </div>
 </section>
