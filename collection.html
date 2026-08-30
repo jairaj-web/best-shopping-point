@@ -10,11 +10,11 @@
 <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','serif'],sans:['Inter','sans-serif']},colors:{ink:'#0B0F1A',cream:'#F8F7F4',gold:'#C5A880',gold2:'#B8936A',brandYellow:'#FFC526',brandRed:'#E42320',brandBlue:'#1E8FD0',brandGreen:'#00A650',brandPink:'#F68CB1',brandLime:'#8CC63F',brandOrange:'#F7931E',brandTeal:'#2DA9C6'}}}}</script>
 <style>html{scroll-behavior:smooth}.glass{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.card-lift{transition:all .35s}.card-lift:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,15,26,.12)}.img-zoom{transition:transform .6s}.group:hover .img-zoom{transform:scale(1.08)}
-.brand-gradient{background:linear-gradient(90deg,#FFC526 0%,#E42320 14.3%,#1E8FD0 28.6%,#00A650 42.9%,#F68CB1 57.1%,#8CC63F 71.4%,#F7931E 85.7%,#2DA9C6 100%)}
-.text-brand-gradient{background:linear-gradient(90deg,#FFC526,#E42320,#1E8FD0,#00A650,#F68CB1,#8CC63F,#F7931E,#2DA9C6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.brand-gradient{background:#1E8FD0}
+.text-brandBlue{color:#1E8FD0;-webkit-text-fill-color:#1E8FD0;background:none}
 .rainbow-underline{position:relative}
-.rainbow-underline::after{content:'';position:absolute;left:0;bottom:-2px;height:3px;width:100%;background:linear-gradient(90deg,#FFC526,#E42320,#1E8FD0,#00A650,#F68CB1,#8CC63F,#F7931E,#2DA9C6);border-radius:999px}
-.hero-bags-bar{height:4px;background:linear-gradient(90deg,#FFC526 0%,#E42320 14.3%,#1E8FD0 28.6%,#00A650 42.9%,#F68CB1 57.1%,#8CC63F 71.4%,#F7931E 85.7%,#2DA9C6 100%)}
+.rainbow-underline::after{content:'';position:absolute;left:0;bottom:-2px;height:3px;width:100%;background:#1E8FD0;border-radius:999px}
+.hero-bags-bar{height:4px;background:#1E8FD0}
 
 </style>
 </head>
@@ -42,8 +42,8 @@
 <div class="absolute top-0 left-0 w-full h-1 brand-gradient"></div>
 <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brandYellow/10 rounded-full blur-[60px] -translate-y-1/2"></div>
 <div class="max-w-[1280px] mx-auto px-4 lg:px-6 relative">
-<div data-aos="fade-up" class="text-[11px] tracking-[0.2em] font-bold text-brand-gradientuppercase">57 Real Styles • No Stock Photos</div>
-<h1 data-aos="fade-up" data-aos-delay="100" class="font-serif text-[36px] lg:text-[48px] font-bold leading-none mt-2">Collection &mdash; <span class="text-brand-gradient italic">Curated</span> for You</h1>
+<div data-aos="fade-up" class="text-[11px] tracking-[0.2em] font-bold text-brandBlueuppercase">57 Real Styles • No Stock Photos</div>
+<h1 data-aos="fade-up" data-aos-delay="100" class="font-serif text-[36px] lg:text-[48px] font-bold leading-none mt-2">Collection &mdash; <span class="text-brandBlue italic">Curated</span> for You</h1>
 <p data-aos="fade-up" data-aos-delay="200" class="text-white/60 max-w-2xl mt-3">5 categories, 57 photos &mdash; all shot in-store at Kothanur. Tap any card to see full gallery.</p>
 </div>
 </section>
@@ -55,7 +55,7 @@
 <a data-aos="zoom-in" data-aos-delay="200" href="gallery" class="group bg-white border border-black/5 overflow-hidden card-lift"><div class="h-[220px] overflow-hidden"><img src="assets/collection-bags.jpg" class="w-full h-full object-cover img-zoom" alt="Handbags"></div><div class="p-5"><div class="text-[11px] tracking-widest font-bold opacity-40">03 &mdash; HANDBAGS</div><h3 class="font-semibold text-lg">Premium Handbags</h3><p class="text-sm opacity-60">GG monogram, circle totes.</p></div></a>
 <a data-aos="zoom-in" href="gallery" class="group bg-white border border-black/5 overflow-hidden card-lift"><div class="h-[220px] overflow-hidden"><img src="assets/collection-bags2.jpg" class="w-full h-full object-cover img-zoom" alt="Slings"></div><div class="p-5"><div class="text-[11px] tracking-widest font-bold opacity-40">04 &mdash; SLINGS</div><h3 class="font-semibold text-lg">Lumina Slings</h3><p class="text-sm opacity-60">Bow, pastel, envelope.</p></div></a>
 <a data-aos="zoom-in" data-aos-delay="100" href="gallery" class="group bg-white border border-black/5 overflow-hidden card-lift"><div class="h-[220px] overflow-hidden"><img src="assets/collection-kish.jpg" class="w-full h-full object-cover img-zoom" alt="KISH"></div><div class="p-5"><div class="text-[11px] tracking-widest font-bold opacity-40">05 &mdash; OFFICE</div><h3 class="font-semibold text-lg">KISH Office Slings</h3><p class="text-sm opacity-60">Neutral office-ready.</p></div></a>
-<div data-aos="zoom-in" data-aos-delay="200" class="brand-gradient text-white p-7 flex flex-col justify-center rounded-2xl"><div class="text-brand-gradient text-[11px] tracking-widest font-bold">IN STORE NOW</div><h3 class="font-serif text-2xl font-bold mt-2">57 Styles<br>Ready to Try</h3><p class="text-ink/60 text-sm mt-3">Visit 299 Kothanur, feel leather, check fit.</p><a href="contact" class="mt-6 inline-flex h-11 px-6 bg-brandBlue text-white font-bold text-sm hover:opacity-90 transition rounded-full items-center justify-center">GET DIRECTIONS →</a></div>
+<div data-aos="zoom-in" data-aos-delay="200" class="brand-gradient text-white p-7 flex flex-col justify-center rounded-2xl"><div class="text-brandBlue text-[11px] tracking-widest font-bold">IN STORE NOW</div><h3 class="font-serif text-2xl font-bold mt-2">57 Styles<br>Ready to Try</h3><p class="text-ink/60 text-sm mt-3">Visit 299 Kothanur, feel leather, check fit.</p><a href="contact" class="mt-6 inline-flex h-11 px-6 bg-brandBlue text-white font-bold text-sm hover:opacity-90 transition rounded-full items-center justify-center">GET DIRECTIONS →</a></div>
 </div>
 <!-- mini product grid preview -->
 <div class="mt-12">

@@ -10,11 +10,11 @@
 <script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','serif'],sans:['Inter','sans-serif']},colors:{ink:'#0B0F1A',cream:'#F8F7F4',gold:'#C5A880',gold2:'#B8936A',brandYellow:'#FFC526',brandRed:'#E42320',brandBlue:'#1E8FD0',brandGreen:'#00A650',brandPink:'#F68CB1',brandLime:'#8CC63F',brandOrange:'#F7931E',brandTeal:'#2DA9C6'}}}}</script>
 <style>html{scroll-behavior:smooth}.glass{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.img-zoom{transition:transform .6s}.group:hover .img-zoom{transform:scale(1.08)}
-.brand-gradient{background:linear-gradient(90deg,#FFC526 0%,#E42320 14.3%,#1E8FD0 28.6%,#00A650 42.9%,#F68CB1 57.1%,#8CC63F 71.4%,#F7931E 85.7%,#2DA9C6 100%)}
-.text-brand-gradient{background:linear-gradient(90deg,#FFC526,#E42320,#1E8FD0,#00A650,#F68CB1,#8CC63F,#F7931E,#2DA9C6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.brand-gradient{background:#1E8FD0}
+.text-brandBlue{color:#1E8FD0;-webkit-text-fill-color:#1E8FD0;background:none}
 .rainbow-underline{position:relative}
-.rainbow-underline::after{content:'';position:absolute;left:0;bottom:-2px;height:3px;width:100%;background:linear-gradient(90deg,#FFC526,#E42320,#1E8FD0,#00A650,#F68CB1,#8CC63F,#F7931E,#2DA9C6);border-radius:999px}
-.hero-bags-bar{height:4px;background:linear-gradient(90deg,#FFC526 0%,#E42320 14.3%,#1E8FD0 28.6%,#00A650 42.9%,#F68CB1 57.1%,#8CC63F 71.4%,#F7931E 85.7%,#2DA9C6 100%)}
+.rainbow-underline::after{content:'';position:absolute;left:0;bottom:-2px;height:3px;width:100%;background:#1E8FD0;border-radius:999px}
+.hero-bags-bar{height:4px;background:#1E8FD0}
 
 </style>
 </head>
@@ -44,8 +44,8 @@
 <div class="max-w-[1280px] mx-auto px-4 lg:px-6 relative">
 <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
 <div data-aos="fade-up">
-<div class="text-[11px] tracking-[0.2em] font-bold text-brand-gradientuppercase">57 Real Photos • No Stock</div>
-<h1 class="font-serif text-[34px] lg:text-[48px] font-bold leading-none mt-2">Gallery &mdash; <span class="text-brand-gradient italic">Real Stock</span></h1>
+<div class="text-[11px] tracking-[0.2em] font-bold text-brandBlueuppercase">57 Real Photos • No Stock</div>
+<h1 class="font-serif text-[34px] lg:text-[48px] font-bold leading-none mt-2">Gallery &mdash; <span class="text-brandBlue italic">Real Stock</span></h1>
 <p class="text-white/60 mt-2">Every photo shot in-store. Tap to enlarge.</p>
 </div>
 <div data-aos="fade-up" data-aos-delay="100" class="flex gap-2 text-[11px] font-bold">
