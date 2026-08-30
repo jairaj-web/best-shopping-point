@@ -74,7 +74,7 @@ html{scroll-behavior:smooth}
 
 <!-- top bar -->
 <div class="bg-white text-ink text-[11px] sm:text-[12px] tracking-wide relative z-20 border-b border-black/5">
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 py-2.5 flex flex-wrap gap-2 justify-between items-center">
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-2.5 flex flex-wrap gap-2 justify-between items-center">
     <div class="flex items-center gap-3 sm:gap-4 flex-wrap opacity-90">
       <span class="flex items-center gap-1.5"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> <span class="hidden sm:inline">299, near Kristu Jayanti College, Kothanur, Bengaluru - 560077</span><span class="sm:hidden">Kothanur, Bengaluru - 560077</span></span>
       <span class="hidden md:inline opacity-30">|</span>
@@ -86,8 +86,8 @@ html{scroll-behavior:smooth}
 
 <!-- header -->
 <header id="header" class="sticky top-0 z-40 bg-white/75 glass border-b border-black/5 transition-all duration-300">
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 h-[64px] sm:h-[72px] flex items-center justify-between">
-    <a href="./" class="flex items-center gap-2 group"><img src="assets/logo.png" alt="Best Shopping Point - Be A Smart Shopper" class="h-[56px] sm:h-[64px] w-auto object-contain py-1 group-hover:scale-[1.02] transition"></a>
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 h-[56px] sm:h-[64px] lg:h-[72px] flex items-center justify-between gap-2">
+    <a href="./" class="flex items-center gap-2 group shrink-0"><img src="assets/logo.png" alt="Best Shopping Point - Be A Smart Shopper" class="h-[36px] sm:h-[46px] lg:h-[58px] w-auto max-w-[140px] sm:max-w-[220px] object-contain py-1 group-hover:scale-[1.02] transition"></a>
     <nav class="hidden lg:flex items-center gap-7 text-[13.5px] font-medium">
       <a href="./" class="relative py-2 text-brandOrange after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brandBlue">Home</a>
       <a href="about" class="relative py-2 hover:text-brandOrange transition after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-brandBlue after:transition-all hover:after:w-full">About</a>
@@ -95,10 +95,10 @@ html{scroll-behavior:smooth}
       <a href="gallery" class="relative py-2 hover:text-brandOrange transition after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-brandBlue after:transition-all hover:after:w-full">Gallery</a>
       <a href="contact" class="relative py-2 hover:text-brandOrange transition after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-brandBlue after:transition-all hover:after:w-full">Visit</a>
     </nav>
-    <div class="flex items-center gap-3">
-      <a href="tel:+917676710066" class="hidden sm:inline-flex h-11 px-6 items-center justify-center border border-ink text-[13px] font-semibold tracking-wide hover:bg-ink hover:text-white transition shine">CALL NOW</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="inline-flex h-11 px-6 items-center justify-center bg-brandBlue text-white text-[13px] font-bold tracking-wide hover:opacity-90 transition shadow-[0_8px_20px_rgba(197,168,128,.35)]">DIRECTIONS</a>
-      <button id="menuBtn" class="lg:hidden w-11 h-11 border border-black/10 flex items-center justify-center bg-white hover:bg-cream transition" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+      <a href="tel:+917676710066" class="hidden sm:inline-flex h-11 px-6 items-center justify-center border border-ink text-[13px] font-semibold tracking-wide hover:bg-ink hover:text-white transition shine whitespace-nowrap">CALL NOW</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="inline-flex h-11 px-3 sm:px-6 items-center justify-center bg-brandBlue text-white text-[11px] sm:text-[13px] font-bold tracking-wide hover:opacity-90 transition shadow-[0_8px_20px_rgba(197,168,128,.35)] whitespace-nowrap shrink-0">DIRECTIONS</a>
+      <button id="menuBtn" class="lg:hidden w-11 h-11 shrink-0 border border-black/10 flex items-center justify-center bg-white hover:bg-cream transition" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
   <div id="mobileNav" class="hidden lg:hidden border-t border-black/5 bg-white/95 glass">
@@ -120,11 +120,11 @@ html{scroll-behavior:smooth}
 <section class="bg-cream text-ink relative overflow-hidden border-b border-black/5">
   <div class="absolute top-0 left-0 w-full h-1 brand-gradient"></div>
   <!-- blobs -->
-  <div class="absolute -top-20 -right-20 sm:-top-32 sm:-right-32 w-[320px] h-[320px] sm:w-[520px] sm:h-[520px] bg-brandYellow/15 rounded-full blob"></div>
-  <div class="absolute top-20 -left-20 sm:top-40 sm:-left-32 w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] bg-brandPink/10 rounded-full blob"></div>
-  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[300px] bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  <div class="absolute -top-10 -right-10 sm:-top-20 sm:-right-20 lg:-top-32 lg:-right-32 w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] lg:w-[520px] lg:h-[520px] bg-brandYellow/15 rounded-full blob"></div>
+  <div class="absolute top-16 -left-10 sm:top-20 sm:-left-20 lg:top-40 lg:-left-32 w-[180px] h-[180px] sm:w-[280px] sm:h-[280px] lg:w-[420px] lg:h-[420px] bg-brandPink/10 rounded-full blob"></div>
+  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-[200px] sm:h-[300px] bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
 
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 grid lg:grid-cols-[1.08fr_0.92fr] gap-4 sm:gap-6 lg:gap-8 lg:gap-10 items-center py-4 sm:py-8 lg:py-14 relative">
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 grid lg:grid-cols-[1.08fr_0.92fr] gap-4 sm:gap-6 lg:gap-8 items-center py-4 sm:py-8 lg:py-14 relative">
     <!-- left -->
     <div class="relative z-10">
       <div data-aos="fade-down" data-aos-duration="700" class="inline-flex items-center gap-1.5 sm:gap-2 bg-white border border-black/10 rounded-full pl-1 pr-2.5 sm:pr-3 py-1 text-[11px] sm:text-xs shadow-sm">
@@ -134,19 +134,19 @@ html{scroll-behavior:smooth}
         <span class="hidden sm:inline text-brandYellow font-bold tracking-widest text-[10px]">TRUSTED IN KOTHANUR</span>
       </div>
 
-      <h1 class="font-serif font-bold leading-[0.88] tracking-tight text-[26px] xs:text-[30px] sm:text-[52px] lg:text-[66px] mt-3 sm:mt-5 text-balance">
+      <h1 class="font-serif font-bold leading-[0.88] tracking-tight text-[30px] sm:text-[44px] lg:text-[66px] mt-3 sm:mt-5 text-balance break-words">
         <span class="block overflow-hidden"><span data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" class="block">Shopping,</span></span>
         <span class="block overflow-hidden"><span data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="block text-brandBlue italic font-semibold">Made Premium</span></span>
         <span class="block overflow-hidden"><span data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" class="block">in Kothanur</span></span>
       </h1>
 
-      <p data-aos="fade-up" data-aos-delay="400" class="text-ink/60 text-[13px] sm:text-[16px] lg:text-[17px] leading-5 sm:leading-relaxed mt-2.5 sm:mt-5 max-w-[560px]">
+      <p data-aos="fade-up" data-aos-delay="400" class="text-ink/60 text-[13px] sm:text-[16px] lg:text-[17px] leading-5 sm:leading-relaxed mt-2.5 sm:mt-5 max-w-full sm:max-w-[560px] break-words">
         57+ premium styles &mdash; <span class="text-ink font-medium">handbags, Lumina & KISH slings, apparel & Samba footwear</span> &mdash; curated near <b class="text-ink">Kristu Jayanti College</b>. Touch, try, take home today. Open till <b class="text-brandBlue">11 PM</b>.
       </p>
 
-      <div data-aos="fade-up" data-aos-delay="500" class="flex flex-col xs:flex-row flex-wrap gap-2.5 sm:gap-3 mt-4 sm:mt-7">
-        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="group h-[44px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center bg-brandBlue text-white font-bold text-sm tracking-wide hover:opacity-90 transition shine w-full xs:w-auto">GET DIRECTIONS <span class="ml-1 group-hover:translate-x-0.5 transition">→</span></a>
-        <a href="tel:+917676710066" class="h-[44px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center border border-ink/15 text-ink font-semibold text-sm hover:bg-white hover:text-ink transition gap-2 w-full xs:w-auto justify-center"> <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> 076767 10066</a>
+      <div data-aos="fade-up" data-aos-delay="500" class="flex flex-col sm:flex-row flex-wrap gap-2.5 sm:gap-3 mt-4 sm:mt-7">
+        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="group min-h-[44px] h-[44px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center bg-brandBlue text-white font-bold text-sm tracking-wide hover:opacity-90 transition shine w-full sm:w-auto">GET DIRECTIONS <span class="ml-1 group-hover:translate-x-0.5 transition">→</span></a>
+        <a href="tel:+917676710066" class="min-h-[44px] h-[44px] sm:h-[48px] px-6 sm:px-7 inline-flex items-center justify-center border border-ink/15 text-ink font-semibold text-sm hover:bg-white hover:text-ink transition gap-2 w-full sm:w-auto justify-center"> <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> 076767 10066</a>
       </div>
 
       <div data-aos="fade-up" data-aos-delay="600" class="grid grid-cols-2 gap-2 sm:gap-3 sm:flex sm:flex-wrap sm:gap-6 mt-4 sm:mt-8 pt-3 sm:pt-6 border-t border-black/5 text-sm">
@@ -170,7 +170,7 @@ html{scroll-behavior:smooth}
         <div class="absolute inset-0 bg-gradient-to-t from-ink/55 via-transparent to-transparent"></div>
         <div class="absolute inset-0 ring-1 ring-white/10 rounded-[18px] pointer-events-none"></div>
         <!-- floating top -->
-        <div class="absolute top-2.5 sm:top-4 right-2.5 sm:right-4 bg-white text-ink px-2.5 sm:px-4 py-2 sm:py-3 shadow-md sm:shadow-xl flex items-center gap-2 sm:gap-3 rounded-lg sm:rounded-xl animate-float max-w-[150px] xs:max-w-[170px] sm:max-w-[210px]">
+        <div class="absolute top-2.5 sm:top-4 right-2.5 sm:right-4 bg-white text-ink px-2.5 sm:px-4 py-2 sm:py-3 shadow-md sm:shadow-xl flex items-center gap-2 sm:gap-3 rounded-lg sm:rounded-xl animate-float max-w-[132px] sm:max-w-[210px]">
           <div class="w-8 h-8 sm:w-10 sm:h-10 bg-cream rounded-full flex items-center justify-center text-sm sm:text-lg shrink-0">🛍️</div>
           <div class="text-xs leading-tight"><b class="block text-sm">33 Mins</b><span class="opacity-60 text-[11px]">From City Centre</span></div>
         </div>
@@ -193,7 +193,7 @@ html{scroll-behavior:smooth}
 
   <!-- stats -->
   <div class="border-t border-black/5 bg-white backdrop-blur">
-    <div class="max-w-[1280px] mx-auto px-4 lg:px-6 grid grid-cols-3 divide-x divide-black/10">
+    <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 grid grid-cols-3 divide-x divide-black/10">
       <div class="py-3 sm:py-5 text-center group" data-aos="zoom-in" data-aos-delay="100"><div class="font-serif text-lg sm:text-2xl font-bold flex items-center justify-center gap-1"><span class="counter" data-target="4.9">0</span>★</div><div class="text-[9px] sm:text-[11px] tracking-widest opacity-60 uppercase">Google Rating</div></div>
       <div class="py-4 sm:py-5 text-center" data-aos="zoom-in" data-aos-delay="200"><div class="font-serif text-xl sm:text-2xl font-bold"><span class="counter" data-target="57">0</span>+</div><div class="text-[10px] sm:text-[11px] tracking-widest opacity-60 uppercase">Premium Styles</div></div>
       <div class="py-4 sm:py-5 text-center" data-aos="zoom-in" data-aos-delay="300"><div class="font-serif text-xl sm:text-2xl font-bold">Till 11PM</div><div class="text-[10px] sm:text-[11px] tracking-widest opacity-60 uppercase">Open Late</div></div>
@@ -202,7 +202,7 @@ html{scroll-behavior:smooth}
 </section>
 
 <!-- WHY -->
-<section id="about" class="max-w-[1280px] mx-auto px-4 lg:px-6 py-6 sm:py-8 lg:py-20">
+<section id="about" class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-20">
   <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
     <div data-aos="fade-up">
       <div class="text-[11px] tracking-[0.2em] font-bold text-brandOrange uppercase">Why Choose Us</div>
@@ -236,8 +236,8 @@ html{scroll-behavior:smooth}
 
 <!-- CATEGORIES -->
 <section id="categories" class="bg-white border-y border-black/5 relative overflow-hidden">
-  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-cream rounded-full blur-[80px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 py-12 lg:py-16 relative">
+  <div class="absolute top-0 right-0 w-[300px] sm:w-[400px] lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[600px] bg-cream rounded-full blur-[80px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-8 sm:py-10 lg:py-16 relative">
     <div class="text-center max-w-2xl mx-auto">
       <div data-aos="fade-up" class="text-[11px] tracking-[0.2em] font-bold text-brandOrange uppercase">Explore Inside</div>
       <h2 data-aos="fade-up" data-aos-delay="100" class="font-serif text-[28px] sm:text-[34px] lg:text-[42px] font-bold leading-none mt-2">Everything You Need, <span class="italic font-medium">Curated</span></h2>
@@ -281,18 +281,18 @@ html{scroll-behavior:smooth}
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="max-w-[1280px] mx-auto px-4 lg:px-6 py-6 sm:py-8 lg:py-16">
-  <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 sm:mb-8">
-    <div data-aos="fade-up">
+<section id="gallery" class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-16">
+  <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
+    <div data-aos="fade-up" class="min-w-0">
       <div class="text-[11px] tracking-[0.2em] font-bold text-brandOrange uppercase">Gallery &mdash; Real Stock</div>
-      <h2 class="font-serif text-[28px] sm:text-[32px] lg:text-[38px] font-bold leading-none mt-2">In Store &mdash; <span class="italic font-medium">57 Photos</span></h2>
+      <h2 class="font-serif text-[24px] sm:text-[32px] lg:text-[38px] font-bold leading-none mt-2 break-words">In Store &mdash; <span class="italic font-medium">57 Photos</span></h2>
     </div>
-    <div data-aos="fade-up" data-aos-delay="100" class="flex items-center gap-2 text-[11px] font-bold tracking-wide">
+    <div data-aos="fade-up" data-aos-delay="100" class="flex items-center gap-2 text-[11px] font-bold tracking-wide flex-wrap">
       <span class="hidden sm:inline opacity-60">TAP TO ENLARGE • FILTER:</span>
-      <div class="flex gap-1.5">
-        <button data-filter="all" class="filter-btn active bg-ink text-white px-4 py-2 rounded-full">ALL 57</button>
-        <button data-filter="bags" class="filter-btn bg-white border border-black/10 px-4 py-2 rounded-full hover:bg-cream transition">BAGS</button>
-        <button data-filter="mix" class="filter-btn bg-white border border-black/10 px-4 py-2 rounded-full hover:bg-cream transition">APPAREL & SHOES</button>
+      <div class="flex gap-1.5 flex-wrap">
+        <button data-filter="all" class="filter-btn active bg-ink text-white px-3 sm:px-4 py-2.5 min-h-[44px] sm:min-h-[44px] rounded-full text-[11px] sm:text-xs whitespace-nowrap">ALL 57</button>
+        <button data-filter="bags" class="filter-btn bg-white border border-black/10 px-3 sm:px-4 py-2.5 min-h-[44px] sm:min-h-[44px] rounded-full hover:bg-cream transition text-[11px] sm:text-xs whitespace-nowrap">BAGS</button>
+        <button data-filter="mix" class="filter-btn bg-white border border-black/10 px-3 sm:px-4 py-2.5 min-h-[44px] sm:min-h-[44px] rounded-full hover:bg-cream transition text-[11px] sm:text-xs whitespace-nowrap">APPAREL & SHOES</button>
       </div>
     </div>
   </div>
@@ -322,9 +322,9 @@ html{scroll-behavior:smooth}
 </div>
 
 <!-- REVIEWS -->
-<section id="reviews" class="bg-cream text-ink py-12 lg:py-16 relative overflow-hidden border-y border-black/5">
-  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-brandYellow/5 rounded-full blur-[80px] -translate-x-1/2 -translate-y-1/2"></div>
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 relative">
+<section id="reviews" class="bg-cream text-ink py-8 sm:py-12 lg:py-16 relative overflow-hidden border-y border-black/5">
+  <div class="absolute top-0 left-0 w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[400px] lg:h-[500px] bg-brandYellow/5 rounded-full blur-[80px] -translate-x-1/2 -translate-y-1/2"></div>
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 relative">
     <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
       <div data-aos="fade-up">
         <div class="inline-flex items-center gap-2 brand-gradient text-white text-xs font-bold px-3 py-1 tracking-widest rounded-full">★★★★★ 4.9 ON GOOGLE</div>
@@ -361,7 +361,7 @@ html{scroll-behavior:smooth}
 </section>
 
 <!-- LOCATION -->
-<section id="location" class="max-w-[1280px] mx-auto px-4 lg:px-6 py-6 sm:py-8 lg:py-16">
+<section id="location" class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-16">
   <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-6 lg:gap-8">
     <div data-aos="fade-right" class="bg-white border border-black/5 p-3 sm:p-4 lg:p-8 rounded-2xl">
       <div class="text-[11px] tracking-[0.2em] font-bold text-brandOrange uppercase">Visit Us</div>
@@ -373,7 +373,7 @@ html{scroll-behavior:smooth}
         </div>
         <div class="flex gap-3">
           <span class="w-9 h-9 bg-cream border border-black/5 flex items-center justify-center shrink-0 rounded-full"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M6.5 3.5 9 6l-2 2c1.2 2.4 3.1 4.3 5.5 5.5l2-2 2.5 2.5-1.5 1.5c-.8.8-2 .9-3 .3A12 12 0 0 1 6.2 8c-.6-1-.5-2.2.3-3Z"/></svg></span>
-          <div class="flex-1"><b>Call / WhatsApp</b><br><a href="tel:+917676710066" class="text-lg font-bold hover:text-brandOrange transition">076767 10066</a><br><div class="flex gap-2 mt-2"><a href="https://wa.me/917676710066?text=Hi%20Best%20Shopping%20Point%2C%20I%20want%20to%20visit%20today" target="_blank" class="inline-flex h-8 px-3 items-center bg-[#25D366] text-white text-xs font-bold rounded-full hover:scale-105 transition">WHATSAPP</a><a href="tel:+917676710066" class="inline-flex h-8 px-3 items-center border border-black/10 text-xs font-bold rounded-full hover:bg-cream transition">CALL</a></div></div>
+          <div class="flex-1 min-w-0"><b>Call / WhatsApp</b><br><a href="tel:+917676710066" class="text-lg font-bold hover:text-brandOrange transition break-all">076767 10066</a><br><div class="flex gap-2 mt-2 flex-wrap"><a href="https://wa.me/917676710066?text=Hi%20Best%20Shopping%20Point%2C%20I%20want%20to%20visit%20today" target="_blank" class="inline-flex min-h-[44px] h-11 px-4 items-center bg-[#25D366] text-white text-xs font-bold rounded-full hover:scale-105 transition">WHATSAPP</a><a href="tel:+917676710066" class="inline-flex min-h-[44px] h-11 px-4 items-center border border-black/10 text-xs font-bold rounded-full hover:bg-cream transition">CALL</a></div></div>
         </div>
         <div class="border border-black/5 bg-cream p-4 rounded-xl">
           <div class="flex items-center justify-between mb-3"><b class="text-sm">Opening Hours</b><span class="text-[11px] tracking-widest font-bold bg-ink text-white px-2 py-1 rounded-full">OPEN TODAY</span></div>
@@ -386,13 +386,13 @@ html{scroll-behavior:smooth}
         </div>
       </div>
     </div>
-    <div data-aos="fade-left" class="border border-black/5 bg-white p-2 rounded-2xl overflow-hidden flex flex-col">
-      <div class="rounded-xl overflow-hidden flex-1 min-h-[380px]">
-        <iframe title="Best Shopping Point Map" src="https://www.google.com/maps?q=Best+Shopping+Point+K+Narayanapura+Kothanur+Bengaluru+560077&z=16&output=embed" class="w-full h-[420px] lg:h-full min-h-[420px] border-0" loading="lazy"></iframe>
+    <div data-aos="fade-left" class="border border-black/5 bg-white p-2 rounded-2xl overflow-hidden flex flex-col min-w-0">
+      <div class="rounded-xl overflow-hidden flex-1 min-h-[320px] sm:min-h-[380px]">
+        <iframe title="Best Shopping Point Map" src="https://www.google.com/maps?q=Best+Shopping+Point+K+Narayanapura+Kothanur+Bengaluru+560077&z=16&output=embed" class="w-full h-[340px] sm:h-[420px] lg:h-full min-h-[340px] sm:min-h-[420px] border-0 max-w-full" loading="lazy"></iframe>
       </div>
       <div class="flex flex-wrap gap-2 p-2">
-        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="text-xs font-bold tracking-wide border border-black/10 px-4 py-2 rounded-full hover:bg-cream transition">GET DIRECTIONS</a>
-        <a href="https://wa.me/917676710066" target="_blank" class="text-xs font-bold tracking-wide border border-black/10 px-4 py-2 rounded-full hover:bg-cream transition">SHARE LOCATION</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="text-xs font-bold tracking-wide border border-black/10 px-3 sm:px-4 py-2 rounded-full hover:bg-cream transition min-h-[44px] inline-flex items-center">GET DIRECTIONS</a>
+        <a href="https://wa.me/917676710066" target="_blank" class="text-xs font-bold tracking-wide border border-black/10 px-3 sm:px-4 py-2 rounded-full hover:bg-cream transition min-h-[44px] inline-flex items-center">SHARE LOCATION</a>
         <span class="ml-auto text-xs opacity-50 py-2">33 mins from city centre</span>
       </div>
     </div>
@@ -401,33 +401,33 @@ html{scroll-behavior:smooth}
 
 <!-- CTA -->
 <section class="bg-cream text-ink relative overflow-hidden border-b border-black/5">
-<div class="absolute top-0 left-0 w-full h-1 brand-gradient"></div>
+  <div class="absolute top-0 left-0 w-full h-1 brand-gradient"></div>
   <div class="absolute inset-0 bg-gradient-to-r from-gold/10 via-transparent to-gold/5 pointer-events-none"></div>
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 relative">
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-8 sm:py-10 flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6 relative">
     <div data-aos="fade-right">
       <h3 class="font-serif text-[26px] sm:text-[28px] font-bold leading-none">Planning to Visit Today?</h3>
       <p class="text-ink/60 text-sm mt-2">57 styles in store • Try before you buy • Parking available</p>
     </div>
-    <div data-aos="fade-left" class="flex flex-wrap gap-3 w-full lg:w-auto">
-      <a href="tel:+917676710066" class="flex-1 lg:flex-none h-12 px-7 inline-flex items-center justify-center bg-brandBlue text-white font-bold text-sm hover:opacity-90 transition rounded-full shine">CALL 076767 10066</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="flex-1 lg:flex-none h-12 px-7 inline-flex items-center justify-center border border-ink/15 text-ink font-semibold text-sm hover:bg-white hover:text-ink transition rounded-full">GET DIRECTIONS</a>
+    <div data-aos="fade-left" class="flex flex-wrap gap-2.5 sm:gap-3 w-full lg:w-auto">
+      <a href="tel:+917676710066" class="flex-1 lg:flex-none min-h-[44px] h-12 px-5 sm:px-7 inline-flex items-center justify-center bg-brandBlue text-white font-bold text-sm hover:opacity-90 transition rounded-full shine whitespace-nowrap">CALL 076767 10066</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="flex-1 lg:flex-none min-h-[44px] h-12 px-5 sm:px-7 inline-flex items-center justify-center border border-ink/15 text-ink font-semibold text-sm hover:bg-white hover:text-ink transition rounded-full whitespace-nowrap">GET DIRECTIONS</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="bg-white text-ink/70 text-sm relative overflow-hidden border-t border-black/5">
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brandYellow/5 rounded-full blur-[60px] pointer-events-none"></div>
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 py-6 sm:py-8 lg:py-10 grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 border-b border-black/5 relative">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[250px] sm:h-[300px] bg-brandYellow/5 rounded-full blur-[60px] pointer-events-none"></div>
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-10 grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 border-b border-black/5 relative">
     <div>
       <div class="flex items-center gap-3">
         <img src="assets/logo.png" alt="Best Shopping Point" class="h-12 w-auto object-contain bg-white rounded p-1">
       </div>
       <p class="opacity-60 leading-relaxed mt-4 text-[13px]">Premium bags, footwear & apparel near Kristu Jayanti College &mdash; trusted 4.9★ by Kothanur.</p>
       <div class="flex gap-2 mt-4">
-        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="w-10 h-10 bg-cream border border-black/5 flex items-center justify-center rounded-full hover:bg-ink hover:text-white transition" aria-label="Directions"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.8"/></svg></a>
-        <a href="tel:+917676710066" class="w-10 h-10 bg-cream border border-black/5 flex items-center justify-center rounded-full hover:bg-ink hover:text-white transition" aria-label="Call"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5 9 6l-2 2c1.2 2.4 3.1 4.3 5.5 5.5l2-2 2.5 2.5-1.5 1.5c-.8.8-2 .9-3 .3A12 12 0 0 1 6.2 8c-.6-1-.5-2.2.3-3Z"/></svg></a>
-        <a href="https://wa.me/917676710066" target="_blank" class="w-10 h-10 bg-cream border border-black/5 flex items-center justify-center rounded-full hover:bg-ink hover:text-white transition" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.01 0C5.38 0 .06 5.32 .06 11.95c0 2.11.55 4.16 1.6 5.97L0 24l6.27-1.64a9.95 9.95 0 0 0 5.74 1.46h.01c6.63 0 11.95-5.32 11.95-11.95 0-3.19-1.24-6.19-3.45-8.39Zm-8.51 17.86h-.01a9.98 9.98 0 0 1-5.09-1.39l-.36-.22-3.72.97.99-3.63-.24-.37a9.96 9.96 0 0 1-1.53-5.36c0-5.5 4.48-9.98 9.99-9.98 2.67 0 5.18 1.04 7.07 2.93a9.93 9.93 0 0 1 2.92 7.06c0 5.5-4.48 9.99-9.99 9.99Zm8.25-7.47c-.45-.22-2.67-1.32-3.08-1.47-.41-.15-.71-.22-1.02.22-.3.45-1.17 1.47-1.44 1.77-.27.3-.54.34-.99.11-.45-.22-1.9-.7-3.62-2.23-1.34-1.19-2.24-2.66-2.5-3.11-.26-.45-.03-.69.19-.91.2-.2.45-.52.67-.78.22-.26.3-.44.45-.74.15-.3.07-.56-.04-.78-.11-.22-1.02-2.46-1.39-3.37-.37-.88-.74-.76-1.02-.78l-.87-.01c-.3 0-.78.11-1.19.56-.41.45-1.55 1.52-1.55 3.7s1.59 4.29 1.81 4.59c.22.3 3.13 4.78 7.58 6.7.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.33-.54 1.52-1.07.19-.53.19-.98.13-1.07-.06-.1-.23-.16-.48-.28Z"/></svg></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Best+Shopping+Point+K.Narayanapura+Kothanur+Bengaluru" target="_blank" class="w-11 h-11 bg-cream border border-black/5 flex items-center justify-center rounded-full hover:bg-ink hover:text-white transition" aria-label="Directions"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.8"/></svg></a>
+        <a href="tel:+917676710066" class="w-11 h-11 bg-cream border border-black/5 flex items-center justify-center rounded-full hover:bg-ink hover:text-white transition" aria-label="Call"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5 9 6l-2 2c1.2 2.4 3.1 4.3 5.5 5.5l2-2 2.5 2.5-1.5 1.5c-.8.8-2 .9-3 .3A12 12 0 0 1 6.2 8c-.6-1-.5-2.2.3-3Z"/></svg></a>
+        <a href="https://wa.me/917676710066" target="_blank" class="w-11 h-11 bg-cream border border-black/5 flex items-center justify-center rounded-full hover:bg-ink hover:text-white transition" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.01 0C5.38 0 .06 5.32 .06 11.95c0 2.11.55 4.16 1.6 5.97L0 24l6.27-1.64a9.95 9.95 0 0 0 5.74 1.46h.01c6.63 0 11.95-5.32 11.95-11.95 0-3.19-1.24-6.19-3.45-8.39Zm-8.51 17.86h-.01a9.98 9.98 0 0 1-5.09-1.39l-.36-.22-3.72.97.99-3.63-.24-.37a9.96 9.96 0 0 1-1.53-5.36c0-5.5 4.48-9.98 9.99-9.98 2.67 0 5.18 1.04 7.07 2.93a9.93 9.93 0 0 1 2.92 7.06c0 5.5-4.48 9.99-9.99 9.99Zm8.25-7.47c-.45-.22-2.67-1.32-3.08-1.47-.41-.15-.71-.22-1.02.22-.3.45-1.17 1.47-1.44 1.77-.27.3-.54.34-.99.11-.45-.22-1.9-.7-3.62-2.23-1.34-1.19-2.24-2.66-2.5-3.11-.26-.45-.03-.69.19-.91.2-.2.45-.52.67-.78.22-.26.3-.44.45-.74.15-.3.07-.56-.04-.78-.11-.22-1.02-2.46-1.39-3.37-.37-.88-.74-.76-1.02-.78l-.87-.01c-.3 0-.78.11-1.19.56-.41.45-1.55 1.52-1.55 3.7s1.59 4.29 1.81 4.59c.22.3 3.13 4.78 7.58 6.7.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.33-.54 1.52-1.07.19-.53.19-.98.13-1.07-.06-.1-.23-.16-.48-.28Z"/></svg></a>
       </div>
     </div>
     <div>
@@ -450,7 +450,7 @@ html{scroll-behavior:smooth}
       </div>
     </div>
   </div>
-  <div class="max-w-[1280px] mx-auto px-4 lg:px-6 py-4 flex flex-col sm:flex-row justify-between gap-2 text-xs opacity-60 relative text-center sm:text-left">
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-4 lg:px-6 py-4 flex flex-col sm:flex-row justify-between gap-2 text-xs opacity-60 relative text-center sm:text-left break-words">
     <span>© 2026 Best Shopping Point. All rights reserved.</span>
     <span>Near Kristu Jayanti College • 4.9★ • 57 Real Photos</span>
   </div>
