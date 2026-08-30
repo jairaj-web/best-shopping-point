@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2000" height="1160" viewBox="0 0 2000 1160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2000" height="1160" fill="white"/>
+  <text x="1000" y="225" font-family="Cormorant Garamond, Garamond, serif" font-size="255" font-weight="700" text-anchor="middle" fill="#0B0F1A">Best</text>
+  <!-- Bags: simplified as rects with side polygon and text -->
+  <!-- We'll keep PNG for precise, SVG placeholder text -->
+  <text x="1000" y="920" font-family="Cormorant Garamond, Garamond, serif" font-size="205" font-weight="700" text-anchor="middle" fill="#0B0F1A">ShoppingPoint</text>
+  <text x="1000" y="1065" font-family="Brush Script MT, French Script MT, cursive" font-size="110" text-anchor="middle" fill="#0B0F1A" font-style="italic">Be A Smart Shopper..</text>
+  <desc>Shopping bags: 8 colorful bags spelling Shopping - yellow S, red h, blue o, green p, pink p, lime i, orange n, teal g</desc>
+</svg>
